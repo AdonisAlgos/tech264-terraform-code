@@ -1,0 +1,18 @@
+# git init downloads plugin version of provider - the below file locks the provider (plugin) version
+# no sensitive info stored no need to gitignore
+# .terraform.lock.hcl
+
+# Doesnt't contain sensitive files just avoids bloat in repo files
+.terraform/
+
+# Most important to protect as they contain credentials
+terraform.tfstate
+terraform.tfstate.backup
+
+# Variable files
+*.tfvars
+*.auto.tfvars
+variable.tf
+
+override.tf
+override.tf.json
